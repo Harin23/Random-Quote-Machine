@@ -7,3 +7,16 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#text, #author{
+    font-size: xx-large;
+    color: lightsteelblue;
+    -ms-word-break: break-all;
+    word-break: break-all;
+  
+    /* Non standard for webkit */
+    word-break: break-word;
+  
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
