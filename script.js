@@ -29,14 +29,15 @@ class App extends React.Component{
     }
     render() {
         return(
-            <div className="container bg-light w-50 h-50" id="quote-box">
+            <div className="container bg-light" id="quote-box">
                 <div className="p-3" id="text">
                 <i className="fa fa-quote-left pr-2"></i>
                 {this.state.quote}
                 <i className="fa fa-quote-right pl-2"></i>
+                -{this.state.author}
                 </div>
-                <div className="float-right text-right pr-3" id="author">-{this.state.author}</div>
-                <div className="container-fluid fixed-bottom p-3" id="icons">
+                <div className="float-right text-right pr-3" id="author"></div>
+                <div className="container-fluid p-3" id="icons">
                     <a id='tweet-quote' title="tweet it" target="_blank" className="button float-left pr-2" href={"https://twitter.com/intent/tweet?hashtags=MyQuoteWebsite,AutoTweetedQuote,QuoteAPI&text="
                     +encodeURIComponent('"'+this.state.quote+'"-'+this.state.author)+"%0A"+encodeURIComponent("https://github.com/Harin23/Random-Quote-Machine")}>
                         <i className="fa fa-twitter fa-3x"></i>

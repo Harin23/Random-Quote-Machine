@@ -8,7 +8,7 @@ body{
     transform: translate(-50%, -50%);
 }
 #text, #author{
-    font-size: xx-large;
+    font-size: 2.5vmax;
     color: dodgerblue;
     -ms-word-break: break-all;
     word-break: break-all;
